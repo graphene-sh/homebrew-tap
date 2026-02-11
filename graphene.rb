@@ -5,21 +5,21 @@
 class Graphene < Formula
   desc "Graphene CLI for GPU serverless workflows"
   homepage "https://graphene.sh"
-  version "0.0.2-alpha"
+  version "0.0.3-alpha"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/graphene-sh/cli/releases/download/v0.0.2-alpha/graphene_0.0.2-alpha_darwin_amd64.tar.gz"
-      sha256 "7a3a1c91a3659dd97a8a264bc2c40b17e6b6ba2f3ffcf014676461a29c2b90fc"
+      url "https://github.com/graphene-sh/cli/releases/download/v0.0.3-alpha/graphene_0.0.3-alpha_darwin_amd64.tar.gz"
+      sha256 "bd23dd2080129d44ab851ba251baac06cf3e7f4c34f57fe79770cf34ffe312c6"
 
       def install
         bin.install "graphene"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/graphene-sh/cli/releases/download/v0.0.2-alpha/graphene_0.0.2-alpha_darwin_arm64.tar.gz"
-      sha256 "ca207c7899bc27520f492c41405bb61908bf7df2d0111a3f3349d88008cbe895"
+      url "https://github.com/graphene-sh/cli/releases/download/v0.0.3-alpha/graphene_0.0.3-alpha_darwin_arm64.tar.gz"
+      sha256 "306a385c6ecaa3531a8e7c49807e7f300f46646ca28c7f1c6d7d3f8d96d1d6a3"
 
       def install
         bin.install "graphene"
@@ -29,15 +29,15 @@ class Graphene < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/graphene-sh/cli/releases/download/v0.0.2-alpha/graphene_0.0.2-alpha_linux_amd64.tar.gz"
-      sha256 "781c719bd908cd6a177684b76d248a4de7e047949a04c9401f9c0b30e03de06c"
+      url "https://github.com/graphene-sh/cli/releases/download/v0.0.3-alpha/graphene_0.0.3-alpha_linux_amd64.tar.gz"
+      sha256 "73b2001dd52eecb1b9cbad4aebeeb28de9a02088b84a693c6b83938bef128040"
       def install
         bin.install "graphene"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/graphene-sh/cli/releases/download/v0.0.2-alpha/graphene_0.0.2-alpha_linux_arm64.tar.gz"
-      sha256 "21e0bc24e06a0c7bc712e86a4c55d365dc6c8ad2e04de24faa5edc2d2c81393f"
+      url "https://github.com/graphene-sh/cli/releases/download/v0.0.3-alpha/graphene_0.0.3-alpha_linux_arm64.tar.gz"
+      sha256 "386804a4d10be1dcbdc9490be8afa369cc93e2701daeac23279b26cb29a1127b"
       def install
         bin.install "graphene"
       end
